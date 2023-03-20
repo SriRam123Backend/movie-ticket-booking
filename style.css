@@ -1,0 +1,1296 @@
+*{
+    margin:0%;
+    font-family: Inter,sans-serif;
+    cursor:default;
+    text-decoration:none;
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    position:relative;
+  }
+  #wholeContainer{
+    display:flex;
+    height:100%;
+    width:1920px;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  #top{
+    display:flex;
+    height:9%;
+    width:100%;
+     justify-content: center;
+    align-items:center;
+    background-color:#012A72;
+    color:white; 
+  }
+  #timings
+  {
+    display:flex;
+    height:10%;
+    width:100%;
+    align-items:center;
+    background-color:#F5F9FE; 
+  }
+  #wholedivforseats
+  {
+    display:flex;
+    height:57%;
+    width:57%;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+  }
+  #screenDiv
+  {
+    display:flex;
+    width:100%;
+    height:38%;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:center;
+  }
+  #bookTickets{
+    display:flex;
+    width:100%;
+    height:10%;
+    background:white;
+    border-top: 1.3px solid #E0E0E0;
+    flex-direction:row;
+    align-items:center;
+  }
+  #seatDiv{
+    display:flex;
+     justify-content:space-between;
+      height:68.5%;
+    width:94%;
+    margin-left:30px;
+    margin-top:-35px;
+  }
+  #seats{
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    justify-content:space-between;
+    height:100%;
+    width:41.5%;
+    margin-left:-0.5px;
+  }
+  .seatsOnLeftSides{
+    display:flex;
+      flex-wrap:wrap;
+  justify-content:space-between;
+    align-items:space-around;
+      height:100%;
+      width:24%;
+      margin-left:16.5px;
+  }
+  .seatsOnRightSides{
+    display:flex;
+      flex-wrap:wrap;
+  justify-content:space-between;
+    align-items:space-around;
+      height:100%;
+      width:24%;
+    margin-right:8px;
+  }
+  .manyseats{
+      display: flex;
+      background-color: white;
+      border: 1.5px solid #00b8f5;
+      justify-content:center;
+      align-items:center;
+      flex-shrink: 0;
+      border-radius: 4px;
+      height: 27px;
+      width: 27px;
+      text-align: center;
+      cursor: pointer;
+     color:#00000000;
+      transition: background .5s;
+    margin-left:3px;
+        font-size: 14px;
+  }
+  .manyseats:hover{
+     background-color:#00B8F5;
+    color:#00B8F5;
+  }
+  .manyseatsOccupied{
+      background-color: #E0E0E0;
+      border: 1.5px solid #E0E0E0;
+      flex-shrink: 0;
+      border-radius: 4px;
+      height: 27px;
+      width: 27px;
+      display: flex;
+      text-align: center;
+      color:#E0E0E0;
+      cursor: not-allowed;
+      transition: background .5s;
+    margin-left:3px;
+  }
+  #seatsinBottom{
+    display:flex;
+    justify-content:space-around;
+      height:28px;
+      width:94%;
+    margin-left:30px;
+    margin-bottom:-9px;
+  }
+  .kRowSeatsLeft{
+     display:flex;
+     justify-content:space-between;
+    align-items:space-around;
+      height:100%;
+      width:24%;
+      margin-left:-2px;
+  
+  }
+  .kRowSeatsCenter{
+    display:flex;
+     justify-content:space-between;
+      height:100%;
+    width:41.5%;
+    margin-left:-0.5px;
+  
+  }
+  .kRowSeatsRight{
+    display:flex;   
+  justify-content:space-between;
+    align-items:space-around;
+      height:100%;
+      width:24%;
+    margin-right:-12px;
+  }
+  #image
+  {
+    margin-bottom:22.5px;
+  }
+  #firstClassDiv{
+    display:flex;
+    width:100%;
+    height:50px;
+      margin-top:3px;
+    justify-content: center;
+    align-items:center;
+    font-size:17px;
+    font-weight:bold;
+    color:black;
+  }
+  #time
+  {
+   font-size:15px;
+    font-weight:100;
+  }
+  #movieName
+  {
+    width:380px;
+    height:37px;
+    margin-right:-66px;
+  }
+  #movieTitle{
+    margin-left:100px;
+     font-size:18px;
+    font-weight:bold;
+  }
+  #patymImage{
+    width:124px;
+    height:47px;
+    position:absolute;
+    left:358px;
+  }
+  #timingsOfMovie
+  {
+    display:flex;
+    justify-content:space-between;
+    height:66px;
+    width:665px;
+    margin-left:315px;
+  }
+  #day{
+    height:66px;
+     width:90px;
+    text-align:left;
+  }
+  .timeOfShow{
+     height:66px;
+     width:128px;
+    border:0.2px solid #E0E0E0;
+    border-radius:10px; 
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    color:#21C179;
+  }
+  
+  .twoD
+  {
+    font-size:13px;
+    font-weight:50;
+    color:black;
+  }
+  .center{
+    margin-top:14.5px;
+  }
+  .onclickTime
+  {
+     height:66px;
+     width:128px;
+      color:white;
+    border:0.2px solid #00B8F5;
+    background-color:#00B8F5;
+    border-radius:10px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+  }
+  .twooD
+  {
+    font-size:13px;
+    font-weight:50;
+    color:white;
+  }
+  #dayColor{
+    font-size:20px;
+    color:grey;
+    font-weight:bold;
+    margin-left:13px;
+  }
+  #date
+  {
+    font-size:18px;
+    color:black;
+    font-weight:bold;
+     margin-left:13px;
+  }
+  .onclickSeats
+  {
+      background-color: #00b8f5;
+      border: 1.5px solid #00b8f5;
+      border-radius: 4px;
+      height: 27px;
+      width: 27px;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      margin-left:3px;
+      color: #ffffff;
+      font-size: 14px;
+  }
+  .box {
+    width: 240px;
+    padding: 8px;
+    border-radius: 10px;
+     margin-top: -90px;
+    margin-left: -200px;
+    background: white;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    font-family: arial;
+    position: absolute;
+  }
+  .alert:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 9px solid transparent;
+    border-right: 9px solid white;
+    border-top: 9px solid white;
+    border-bottom: 9px solid transparent;
+    right: 27px;
+    bottom: -13px;
+  }
+  #blueDivForBookTickets
+  {  
+    margin-left:300px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#00b8f5;
+    border-radius:10px;
+    width:230px;
+    height:48px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+  }
+  #ticketpriceDiv{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:160px;
+    height:48px;
+    margin-left:650px;
+  }
+  #ticketPrice
+  {
+    display: flex;
+   text-align:left;
+    width:160px;
+    height:26px;
+    font-size: 16px;
+    font-weight:550;
+  }
+  #HowManyTickets
+  {
+    display: flex;
+    text-align:left;
+    width:160px;
+    height:22px;
+    font-size: 14px;
+    font-weight:500;
+    color:grey;
+  }
+  #shadow{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width:100%;
+    min-height:100%;
+    opacity: .9;
+    background: #1d252d;
+    position: fixed;
+    top: 0;
+  }
+  #mainDivForPaytmPaying
+  {
+    display:flex;
+    flex-direction:column;
+    height:480px;
+    width:810px;
+    position:absolute;
+  }
+  #paytmPaying
+  {
+    display:flex;
+    flex-direction: row;
+    height:460px;
+    width:810px;
+    margin-left:10px;
+    margin-top:-20px;  
+    position:relative;
+  }
+  #Instructions
+  {
+   background-color:rgb(249,247,247);
+    display:flex;
+    flex-direction: column;
+    height:460px;
+    width:405px;
+    font-family:arial;
+    color:black;
+     position:relative;
+     border-top-left-radius: 10px;
+  }
+  .fontSize{
+    font-size:14px;
+  }
+  #QRcode
+  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height:460px;
+    width:405px;
+    background-color:white;
+    position:relative;
+    border-top-right-radius: 10px;
+  }
+  #paytmPayingLightBlue
+  {
+    height:10px;
+    width:810px;
+    background-color:#00b8f5;
+    margin-left:10px;
+      position:relative;
+  }
+  #paytmPayingDarkBlue
+  {
+    height:10px;
+    width:810px;
+    background-color:#012A72;
+    margin-left:10px;
+      border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+      position:relative;
+  }
+  #CloseButton
+  {
+    font-size:35px;
+    color:grey;
+    position:absolute;
+    top: 14px;
+    left: 358px;
+    cursor:default;
+  }
+  #steps
+  { 
+    margin-top:55px;
+    width:100%;
+    height:250px;
+    display:flex;
+    line-height:24px;
+    flex-direction:column;
+  }
+  #download{
+    width:100%;
+    height:100px;
+    margin-top:20px;
+  }
+  #googlePlay
+  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+      height:44px;
+      width:150px;
+      margin-top: 13px;
+      margin-left: 36px;
+      border-radius: 8px;
+    border: 0.8px solid lightgrey;
+    float:left;
+    font-size:16px;
+    color:#8BA6C1;
+    font-weight:bold; 
+  }
+  #googlePlay:hover
+  {
+    border-bottom: 3px solid gray;
+  }
+  #appstore
+  {
+      display:flex;
+    justify-content: center;
+    align-items: center;
+      height: 44px;
+      width: 143px;
+      margin-top: -46px;
+      margin-left: 209px;
+      border-radius: 8px;
+      border: 0.8px solid lightgrey;
+      float:left;
+      font-size:16px;
+    color:#8BA6C1;
+    font-weight:bold;
+    text-decoration: none;
+  }
+  #appstore:hover
+  {
+    border-bottom: 3px solid gray;
+  }
+  #text
+  {
+    height: 20px;
+    margin-top:20px;
+    margin-left:45px;
+  }
+  .positionOftheText
+  {
+    margin-left:7px;
+  }
+  #boldingLetter
+  {
+    font-size:18px;
+    font-weight:bold;
+    color:black;
+  }
+  #bolding{
+     margin-top:55px;
+      font-size:18px;
+    font-weight:bold;
+    color:black;
+  }
+  .fontMargin{
+    margin-left:34px;
+  }
+  #watchVideo
+  {
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 44px; 
+    width: 143px;
+    font-size:17px;
+    color:#00b8f5;
+    font-weight:bold;
+    margin-left:34px;
+    margin-top:16px;
+  }
+  #videoWatching 
+  {
+    width:100%;
+    height:324px;
+    display:flex;
+    line-height:24px;
+    flex-direction:column;
+  }
+  #closeButtonForVideo
+  {
+      font-size: 15px;
+      color: grey;
+      font-weight: bold;
+      position: absolute;
+      top: 431px;
+      left: 183px;
+  }
+  #closeButtonForVideo:hover{
+    color:black;
+  }
+  #Barcode
+  {
+    height:280px;
+    width:270px;
+  }
+  #positionOfscan
+  {
+    margin-top:14px;
+  }
+  #PayOption
+  {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+    border-radius:20px;
+    height: 44px;
+    width: 143px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    margin-top:17px;
+    transition: .5s;
+  }
+  #PayOption:hover{
+    background-color:white;
+    border:2px solid black;
+    color:black;
+  }
+  #referenceOfSeats
+  {
+    display: flex;
+    justify-content:space-between;
+    width:265px;
+    height:20px;
+    margin-left:285px;
+  }
+  #Available
+  {
+    background-color:white;
+    border: 1.5px solid #00B8F5;
+    border-radius:2.8px;
+    height: 18.5px;
+    width: 18.5px; 
+  }
+  #Booked
+  {
+    background-color: #C2C5C9;;
+    border: 1.5px solid #C2C5C9;;
+    border-radius:2.8px;
+    height: 18.5px;
+    width: 18.5px;  
+  }
+  #Unavailable
+  {
+    border: 1.5px solid #C2C5C9;;
+    border-radius:2.8px;
+    height: 18.5px;
+    width: 18.5px;  
+    margin-left:-16px;
+  }
+  .fontpositionForAvailable{
+    margin-left:28px;
+    color:grey;
+    font-size:12px;
+    font-weight:bold;
+  }
+  #SuccessFullyBookedTickets{
+    position:absolute;
+    top:75%;
+    height:20px;
+    width:350px;
+    font-size:18px;
+  }
+  #PaymentFinishedVideo
+  {
+    width:100%;
+    height:350px;
+    display:flex;
+    line-height:24px;
+    flex-direction:column;
+  }
+  #Receipt
+  {
+    width:75%;
+    height:20px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+  }
+  #leftArrowButton
+  {
+    display:flex;
+    width:10px;
+    height:30px;
+    position:absolute;
+    left:325px;
+  }
+#BackButtonfrontpage
+  {
+    font-size: 28px;
+    color: white;
+  }
+/* ................................................................................ */
+#fullContainer
+{
+    
+    height:100%;
+    width:1900px;
+}
+  #firstDiv
+{
+  display:flex;
+  height:9%;
+  width:100%;
+  box-shadow:0px 4px #F5F5F5; 
+}
+#SecondDiv
+{
+  display:flex;
+  width:100%;
+  height:18%;
+}
+#thirdDiv{
+  display:flex;
+  width:100%;
+  height: 197%;
+  background:#F5F5F5;
+  flex-direction:column;
+}
+#imageofPaytm
+{
+  display:flex;
+  margin-left: 91px;
+  height: 54px;
+  width: 180px;
+  margin-top: 19px;
+}
+#navigations
+{
+   display:flex;
+  justify-content:space-around;
+  align-items:center;
+    margin-left: 316px;
+    height: 50px;
+    width: 786px;
+    margin-top: 22px;
+   
+}
+#signinbutton{
+    display:flex;
+    justify-content:space-between;
+  align-items:center;
+    margin-left: 324px;
+    height: 38px;
+    width: 115px;
+    margin-top: 27px;
+    background: #00BAF2;
+  color:white;
+    border-radius: 50px;
+}
+#signIn
+{
+  margin:13px;
+  font-weight:bold;
+}
+#NextDaydiv
+{
+  display:flex;
+  align-items:center;
+  height:3.7%;
+  width:100%;
+/*    background:#F5F5F5; */
+  border-bottom: 1px solid #E0E0E0;
+}
+.moviesDiv
+  {
+   display: flex;
+    flex-direction:column;
+    height: 19%;
+    width: 66.25%;
+    background:white;
+    border-radius: 15px;
+    margin: 27px 323px;
+  }
+.topDivInMoviesDiv
+{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    height:12%;
+    width:100%;
+}
+.SecondDivInMoviesDiv
+{
+     display: flex;
+    align-items: center;
+    height:44%;
+    width:100%;
+    /* background: Blue; */
+    border-top: 1px solid #E0E0E0;
+}
+.moviesDiv1
+  {
+     display: flex;
+    height: 17.8%;
+    width: 66.25%;
+    flex-direction:column;
+    background: white;
+    border-radius: 15px;
+    margin: -3px 323px;
+  }
+.NearByCinema
+{
+    height:34%;
+    width:100%;
+}
+.moviesDiv2
+  {
+    display: flex;
+    height: 25.4%;
+    width: 66.25%;
+      flex-direction:column;
+    background: white;
+    border-radius: 15px;
+    margin: 30px 323px;
+  }
+.moviesDiv3
+  {
+   display: flex;
+    height: 16.4%;
+    width: 66.25%;
+    background: white;
+    border-radius: 15px;
+    flex-direction:column;
+    margin: -2px 323px;
+  }
+.favouriteMovie
+{
+  display:flex;
+  align-items:center;
+  width:100%;
+  height:6%;
+  margin-top:19px;
+}
+.upcomingMovies
+{
+  color: black;
+  font-weight:bold;
+  margin-left:22px;
+  font-size:18px;
+}
+#moviesList{
+    display:flex;
+    justify-content:space-evenly;border:none;
+    width: 100%;
+    height: 83%;
+    margin-top: 13px;
+}
+.moviesname
+{
+  margin:17px 12px;
+  font-weight:bold;
+  font-size:18px;
+}
+.moviescontent
+{
+    margin:-12px 12px;
+  color:#878787;
+  font-size:15px;
+}
+.bookTicketForMovieDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    color: #00BAF2;
+    border-top: 1px solid #E0E0E0;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    margin-top: 27px;
+  font-weight:bold;
+}
+.bookTicketForMovieDiv:hover
+{
+  cursor: pointer;
+  color: darkblue;
+}
+.movieList{
+    display: flex;
+    width: 23%;
+    height: 100%;
+      flex-direction:column;
+    border-radius: 9px;
+   border: 1px solid #E0E0E0;
+   border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+.movieImage
+{
+    display: flex;
+    width:100%;
+    height:70.5%;
+}
+#theatreName
+{
+  display: flex;
+  width: 570px;
+  height: 85px;
+  margin: 53px 311px;
+  flex-direction:column;
+}
+#theatreNameFont{
+   display:flex;
+   justify-content:space-between;
+   font-size: 34px;
+   font-weight: bold;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+#address
+{
+    margin-left: 5px;
+    margin-top: -6px;
+}
+#dateStructure
+{
+width: 125px;
+    height: 44px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0px 320px;
+    cursor: pointer;
+}
+#monthDivStructure
+{
+   width: 20px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:grey;
+   border-radius:4px;
+}
+.dayDivStructure
+{
+  width:44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background: white;
+    border:1px solid #E0E0E0;
+    color:grey;
+  border-radius:10px;
+  font-size:12px;
+}
+.dayDivStructureOnclick
+{
+    width:44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background:#00B8F5;
+    border:1px solid #00B8F5;
+    color:white;
+  border-radius:10px;
+  font-size:12px;
+}
+.dateDivStructure
+{
+  width:18px;
+    height:14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color:black;
+    font-weight:bold;
+    font-size:16px;
+    margin-top:3px;
+}
+.dateDivStructureOnclick
+{
+  width:18px;
+    height:14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    margin-top:3px;
+}
+#monthRotateText
+{
+    font-size:12px;
+    font-weight:bold;
+    color:white;
+    transform: rotate(269deg);
+}
+#getDirections
+{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+    width: 150px;
+    height: 30px;
+    margin-left: 245px;
+    margin-top: 105px;
+  font-size:18px;
+  font-weight:bold;
+  color:#00B8F5;
+}
+.boldletters
+{
+  font-weight:bold;
+  font-size:18px
+}
+#filterBy
+{
+    width: 757px;
+    height: 100%;
+    align-items: center;
+    margin-left: 58px;
+  border-left: 1px solid #E0E0E0;
+}
+.imagesResolution
+{
+    width:290px;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+#searchButton
+{
+    width: 375px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#divForColorDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 519px;
+    height: 16px;
+    margin-left: 285px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0F0F0F8A;
+}
+#greenColor
+{
+  background-color:#21C179;
+  border-radius:3px;
+  height: 6px;
+  width: 6px; 
+}
+#yellowColor
+{
+    background-color:#FF9D00;
+    border-radius:3px;
+    height: 6px;
+    width: 6px; 
+}
+#redColor
+{
+    background-color:#FD5154;
+    border-radius:3px;
+    height: 6px;
+    width: 6px; 
+}
+#subtitleLanguage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 10px;
+    border: 1px solid #0F0F0F8A;
+    border-radius: 3px;
+    font-size: 9px;
+}
+#SuccessFullyBookedTickets{
+  position:absolute;
+  top:75%;
+  height:20px;
+  width:350px;
+  font-size:18px;
+}
+#redHeart
+{
+   color:red; 
+}
+.searchButton
+{
+    color:grey;
+}
+#search{
+    height: 44px;
+    border:none;
+    outline: none;
+    width: 350px;
+    font-size: 16px;
+    font-weight: bold;
+    color:lightgrey;
+    color:black;
+}
+#searchbox{
+    display: flex;
+    align-items: center;
+    height: 44.86px;
+    width: 350px;
+    border-bottom: 2px solid white;
+    border-top-color: #ffffff;
+    border-right-color: #ffffff;
+    border-left-color: #ffffff;
+}
+.divForNearcinemaHalls
+{
+  display: flex;
+  height: 42px;
+  margin:22px 5px;
+}
+.nearbyCinemaHalls
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 183px;
+  height: 42px;
+  border-radius: 90px;
+  border: 1px solid lightgrey;
+  color:black;
+  font-size: 14px;
+  letter-spacing:0.4;
+  margin-left: 17px;
+}
+.nearbyCinemaHalls:hover
+{
+  cursor: pointer;
+  background-color:#E0E0E0;
+}
+.positionOftextinThemoviesDiv1
+{
+  font-size:18px;
+  font-weight:bold;
+  margin: 10px 25px;
+  height:20px;
+}
+.topcities
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 42px;
+  border-radius: 28px;
+  border: 1px solid lightgrey;
+  font-size: 14px;
+  letter-spacing: 0.4;
+  margin-left: 17px;
+  color:black;
+}
+.topcities:hover
+{
+  cursor: pointer;
+  background-color:#E0E0E0;
+}
+#movieImageForFrontPage{
+  display: flex;
+  width:260px;
+  height:104px;
+  margin-left:25px;
+  float:left;
+}
+.imageSize
+{
+  border-radius: 5px;
+  height:104px;
+  width:104px;
+}
+.moviesContent1{
+  margin: 30px -80px;
+  color: #878787;
+  font-size: 13px;
+}
+.moviesNames
+{
+  margin:7px 12px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.ShowtimeOfMovie{
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+  width: 568px;
+  margin-left: 148px;
+  margin-top: 36px;
+}
+.tamilLanguage
+{
+  position: absolute;
+  top: 649px;
+  left: 757px;
+  font-weight: bold;
+}
+.tamilLanguage1
+{
+  position: absolute;
+  top: 475px;
+  left: 757px;
+  font-weight: bold;
+}
+#alertBox
+{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-width:100%;
+min-height:100%;
+background: #1d252d;
+position: fixed;
+top: 0;
+}
+#alertBoxFormovies
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  height:460px;
+  width:810px;
+  position:relative;
+  background-color: white;
+  border-radius: 20px;
+}
+#closeButton2
+{
+  font-size: 35px;
+  color: grey;
+  position: absolute;
+  top: 6px;
+  left: 768px;
+  cursor: default;
+}
+#viewAllAvailableMovies
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 214px;
+  height: 42px;
+  border-radius: 52px;
+  border: 2px solid #00b8f5;
+  color: #00b8f5;
+  font-size: 15px;
+  letter-spacing: 0.4;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#seatdiv1
+{
+  height:282px;
+  width:auto;
+  margin-top: -11px;
+}
+#socialMedia
+{
+  display: flex;
+  align-items: center;
+  height: 3.5%;
+  width: 66.25%;
+  border-radius: 15px;
+  flex-direction: row;
+  margin: 88px 323px;
+}
+#socialMediaApp{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 36px;
+  width: 255px;
+  margin-left:1049px;
+}
+.socialMediaColor
+{
+  font-size:32px;
+  color:grey;
+}
+.socialMediaColor:hover{
+  color:#00BAF2;
+  cursor: pointer;
+}
+#divforInstallingPaytm
+{
+  position:absolute;
+  left:341px;
+  width:580px;
+  height:60px;
+  font-size:20px;
+  font-weight:bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#finalLine
+{
+  border:0.5px solid lightgrey;
+  position: absolute;
+  top:2325px;
+  left:322px;
+  width:1258px;
+}
+#interfaceDiv
+{
+  display: flex;
+  justify-content: space-between;
+  width:96.3%;
+  height:80%;
+  margin:13px 22px;
+}
+.Screen1images
+{
+  height:273px;
+  width:auto;
+  border-radius:12px;
+}
+#positionOfSignUp
+{
+  display:flex;
+  flex-direction:column;
+  height:480px;
+  width:810px;
+  position:absolute;
+  top:31%;
+  left:31%;
+}
+.colorYellow
+{
+  color:#FF9D00;
+}
